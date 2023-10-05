@@ -1,0 +1,183 @@
+/* styles.css */
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font size and family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.menu-options a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.menu-options a:hover {
+  text-decoration: underline;
+}
+
+/* Project Cards Styles */
+
+.projects {
+  background-color: rgb(23, 23, 23);
+  min-height: 100vh;
+  height: auto;
+  padding: 60px 5px 280px;
+  overflow: scroll;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  min-height: 200px;
+  height: min-content;
+  position: relative;
+  perspective: 1000px;
+  width: 300px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 5px;
+  
+}
+
+
+.project-front, .project-back {
+  outline: #fff solid 1px;
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  aspect-ratio: 2/1;
+}
+
+.project-front {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.project-back {
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-back a {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-back a:hover {
+  text-decoration: underline;
+}
+
+.project-card:hover .project-front {
+  transform: rotateY(-180deg);
+}
+
+.project-card:hover .project-back {
+  transform: rotateY(0deg);
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.technologies img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  width: 60%;
+  height: 25px;
+  padding: 5px;
+  margin: 2px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea{
+  height: 60px;
+}
+
+.contact-form button {
+  background-color: #17b38c;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+}
+
