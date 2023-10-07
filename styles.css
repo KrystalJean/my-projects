@@ -35,7 +35,8 @@ body {
   font-size: 24px;
 }
 
-.profile:hover {
+.profile:hover img,
+.profile:hover #profile-name {
   cursor: pointer;
   color: #17b38c;
 }
@@ -48,7 +49,7 @@ body {
   box-shadow: 0px 0px 10px 1px;
 }
 
-#profile-name {
+#profile-name, #profile-img {
   text-decoration: none;
   border-bottom: 0px;
 }
@@ -64,6 +65,8 @@ body {
   text-decoration: none;
   margin-left: 5px;
   padding: 4px;
+  padding-bottom: 2px;
+
 }
 
 .menu-options a:hover {
@@ -324,12 +327,12 @@ footer {
     padding-bottom: 10px;
   }
 
-  /* .profile img {
+  .profile img {
     position: absolute;
-    left: 10px;
-    top: 10px;
-    height: 50px;
-  } */
+    left: 20px;
+    top: 20px;
+    height: 60px;
+  }
 
   .projects {
     padding: 100px 5px 280px;
@@ -349,5 +352,14 @@ footer {
 
   .footer-left {
     padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .profile img {
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    height: 52px;
   }
 }
