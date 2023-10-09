@@ -13,7 +13,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="profile menu-options">
-      <a href="#" data-filter="about" id="profile-img"><img  src="profile-pic.jpg" alt="Profile Picture"></a>
+      <a href="#" data-filter="about" id="profile-img"><img src="profile-pic.jpg" alt="Profile Picture"></a>
       <a href="#" data-filter="about" id="profile-name"><span>Krystal Austin</span></a>
     </div>
     <div class="menu-options">
@@ -36,9 +36,11 @@
         </div>
         <div class="project-back">
           <h3>Shop Chill Vibes</h3>
-          <p>Description of the project.</p>
-          <a href="code-link">Code</a>
-          <a href="live-site-link">Live Site</a>
+          <p>Custom design built with Elementor, and connected to the Printify API, so the client may quickly, and easily create, and ship products.</p>
+          <div class="flex-container">
+            <!-- <a href="code-link">Code</a> -->
+            <a href="https://www.shopchillvibes.com" target="_blank">Live Site</a>
+          </div>
         </div>
       </div>
 
@@ -48,9 +50,11 @@
         </div>
         <div class="project-back">
           <h3>Cozy Home Remedy</h3>
-          <p>Description of the project.</p>
-          <a href="code-link">Code</a>
-          <a href="live-site-link">Live Site</a>
+          <p>Custom logo, mega-menu, and connected with the AliDropship API for client to easily, and efficiently be able to work with merchants to source products to sell, and ship.</p>
+          <div class="flex-container">
+            <!-- <a href="code-link">Code</a> -->
+            <a href="https://www.cozyhomeremedy.com" target="_blank">Live Site</a>
+          </div>
         </div>
       </div>
 
@@ -60,9 +64,11 @@
         </div>
         <div class="project-back">
           <h3>Riverbend Liquor & Wine</h3>
-          <p>Description of the project.</p>
-          <a href="code-link">Code</a>
-          <a href="live-site-link">Live Site</a>
+          <p>Custom design with existing branding for a fresh look to replace client's old site. Applied Google Analytics, and SEO to bring this company to page one Google Results for local liquor stores. </p>
+          <div class="flex-container">
+            <!-- <a href="code-link">Code</a> -->
+            <a href="https://www.riverbendliquorandwine.com" target="_blank">Live Site</a>
+          </div>
         </div>
       </div>
 
@@ -72,9 +78,11 @@
         </div>
         <div class="project-back">
           <h3>House Marketplace</h3>
-          <p>Description of the project.</p>
-          <a href="code-link">Code</a>
-          <a href="live-site-link">Live Site</a>
+          <p>This app allows users to create listings for homes to rent or buy.  Users are able to search listings, and contact the seller/landlord.</p>
+          <div class="flex-container">
+            <a href="https://github.com/KrystalJean/house-marketplace" target="_blank">Code</a>
+            <a href="https://krystaljean.github.io/house-marketplace/" target="_blank">Live Site</a>
+          </div>
         </div>
       </div>
 
@@ -191,7 +199,7 @@
   </section>
 
 
-  <footer>
+  <footer id="footer">
     <div class="footer-left">
       <!-- <span>Krystal Austin</span> -->
       <div class="technologies">
@@ -209,8 +217,11 @@
     <div class="footer-right">
       <div class="contact-form">
         <form action="send-email.php" method="post">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
+          <div class="flex-container">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+          </div>
           <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>

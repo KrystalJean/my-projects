@@ -136,7 +136,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   display: flex;
-  aspect-ratio: 2/1;
+  /* aspect-ratio: 2/1; */
 }
 
 .project-front {
@@ -149,21 +149,30 @@ body {
   color: #fff;
   transform: rotateY(180deg);
   padding: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.project-back h3 {
+  color: #17b38c;
 }
 
 .project-back a {
   display: block;
-  margin-top: 10px;
+  margin: 5px;
   color: #fff;
   text-decoration: none;
 }
 
 .project-back a:hover {
   text-decoration: underline;
+}
+
+.project-back a:active {
+  color: #17b38c;
 }
 
 .project-card:hover .project-front {
@@ -268,14 +277,17 @@ body {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 5px;
+  margin-bottom: -150px;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s ease;
 }
 
 .footer-left {
@@ -297,6 +309,14 @@ footer {
   margin: 10px;
 }
 
+.hide {
+  display: none;
+}
+
+.contact-form {
+  padding-bottom: 5px;
+}
+
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
@@ -307,6 +327,14 @@ footer {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* .contact-form input {
+  width: 45%;
+} */
+
+.flex-container {
+  display: flex;
 }
 
 .contact-form textarea {
@@ -346,7 +374,6 @@ footer {
 
   footer {
     flex-direction: column;
-    margin-bottom: -180px;
     padding: 5px;
   }
 
